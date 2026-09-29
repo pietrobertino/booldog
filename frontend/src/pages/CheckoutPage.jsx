@@ -64,7 +64,7 @@ export default function CheckoutPage() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/orders",
+        "https://booldog.onrender.com/orders",
         orderToSend,
       );
       console.log(data);
@@ -404,7 +404,7 @@ export default function CheckoutPage() {
                       <span className="text-danger fw-bold">-{discount}€</span>
                     </div>
                   )}
-                  
+
                   <div className="d-flex justify-content-between mb-2">
                     <span>Spedizione in tutta Europa</span>
                     <span className="cart-meta text-success">Gratuita</span>
@@ -441,7 +441,7 @@ export default function CheckoutPage() {
                     di conferma!
                   </div>
                 )}
-                 {serverError && (
+                {serverError && (
                   <h4 className="text-danger d-flex justify-content-center mb-4">
                     {serverError}
                   </h4>

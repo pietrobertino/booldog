@@ -21,8 +21,8 @@ export default function SearchPage() {
     const [listView, setListView] = useState(false);
 
     const url = animalSlug
-        ? `http://localhost:3000/products/animal/${endpoint}`
-        : `http://localhost:3000/products`;
+        ? `https://booldog.onrender.com/products/animal/${endpoint}`
+        : `https://booldog.onrender.com/products`;
 
     useEffect(() => {
         setProducts([]);

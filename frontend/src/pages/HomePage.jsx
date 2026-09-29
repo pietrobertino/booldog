@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 
 
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://booldog.onrender.com";
 
 function HomePage() {
 
@@ -140,7 +140,7 @@ function HomePage() {
                       aria-label="Sfoglia cane"
                     >
                       <i className="bi bi-arrow-right"></i>
-                      </Link>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@ function HomePage() {
             </div>
           ))}
         </div>
-      </section> 
+      </section>
 
       {/* ── MARCHI ── */}
       <section section

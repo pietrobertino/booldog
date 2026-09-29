@@ -9,7 +9,7 @@ export default function OrderConfirmedPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/orders/${id}`, {
+      .get(`https://booldog.onrender.com/orders/${id}`, {
         params: { id: id },
       })
       .then(({ data }) => {

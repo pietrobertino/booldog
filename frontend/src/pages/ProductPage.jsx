@@ -27,7 +27,7 @@ export default function ProductPage() {
   useEffect(() => {
     setProductQuantity(1);
     axios
-      .get(`http://localhost:3000/products/${slug}`)
+      .get(`https://booldog.onrender.com/products/${slug}`)
       .then((res) => setDataProduct(res.data));
   }, [slug]);
 
