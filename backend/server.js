@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 const productsRouter = require("./routers/productsRouter")
 const couponsRouter = require("./routers/couponsRouter")
 const ordersRouter = require("./routers/ordersRouter")
@@ -9,7 +9,7 @@ const serverError = require("./middlewares/serverError")
 const notFound = require("./middlewares/notFound")
 const cors = require("cors")
 
-app.use(cors())
+app.use(cors({ origin: 'https://booldog.vercel.app' }))
 
 app.use(express.json())
 
