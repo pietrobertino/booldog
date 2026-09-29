@@ -47,7 +47,7 @@ export default function CartProductsList() {
                     className="text-decoration-none text-reset aspect-ratio-1x1 d-flex align-items-center justify-content-center"
                   >
                     <img
-                      src={`http://localhost:3000/images/products/${item.img_url}`}
+                      src={`https://booldog.onrender.com/images/products/${item.img_url}`}
                       alt={item.name}
                       className="w-100 h-100 object-fit-contain"
                     />
