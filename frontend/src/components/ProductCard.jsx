@@ -18,7 +18,7 @@ export default function ProductCard({ product, animalType }) {
         <div className="col-auto position-relative">
           <WishListButton product={product} slug={product.slug} />
           <Link to={`/product/${product.slug}`} className="aspect-ratio-1x1 d-flex align-items-center justify-content-center">
-            <img className="w-100 h-100 object-fit-contain p-3" src={`http://localhost:3000/images/products/${product.img_url}`} alt={`${product.name}'s picture`} />
+            <img className="w-100 h-100 object-fit-contain p-3" src={`https://booldog.onrender.com/images/products/${product.img_url}`} alt={`${product.name}'s picture`} />
           </Link>
         </div>
 
