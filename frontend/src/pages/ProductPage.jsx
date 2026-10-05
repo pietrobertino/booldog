@@ -57,7 +57,7 @@ export default function ProductPage() {
                     <WishListButton product={dataProduct} slug={slug} />
                     <img
                       className="w-100 h-100 object-fit-contain"
-                      src={`http://localhost:3000/images/products/${dataProduct.img_url}`}
+                      src={`https://booldog.onrender.com/images/products/${dataProduct.img_url}`}
                       alt={dataProduct.name}
                     />
                   </div>
